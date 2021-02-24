@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Data {
-	private static String connection_DB = "jdbc:sqlserver://den1.mssql8.gear.host:1433;databaseName=invictustest;user=invictustest;password=test@123";
+	private static String connection_DB = "jdbc:sqlserver://<server>:<host>;databaseName=<database>;user=<user>;password=<password>";
 	
 	public static void main(String[] args) {
 		try (Connection con = DriverManager.getConnection(connection_DB); Statement stmt = con.createStatement();) {
